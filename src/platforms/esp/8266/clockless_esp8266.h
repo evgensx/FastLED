@@ -1,5 +1,8 @@
 #pragma once
 
+#pragma GCC diagnostic push // for esp8266 v3.0.2
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations" // for esp8266 v3.0.2
+
 FASTLED_NAMESPACE_BEGIN
 
 #ifdef FASTLED_DEBUG_COUNT_FRAME_RETRIES
@@ -153,3 +156,5 @@ protected:
 };
 
 FASTLED_NAMESPACE_END
+
+#pragma GCC diagnostic pop // for esp8266 v3.0.2
